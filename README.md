@@ -304,5 +304,7 @@ For support or questions, please open an issue on the GitHub repository.
 ---
 
 **CommuteTimely** - Never miss your commute window again! 🚗⏰
-# reactnative-ios-android
-# reactnative-ios-android
+
+## Repository Information
+
+This project is also available at: https://github.com/callmeumair/reactnative-ios-android
