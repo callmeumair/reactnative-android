@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "CommuteTimely",
-    "slug": "commutetimely",
+    "slug": "ct",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -44,7 +44,12 @@
         "VIBRATE",
         "RECEIVE_BOOT_COMPLETED",
         "WAKE_LOCK",
-        "ACCESS_WIFI_STATE"
+        "ACCESS_WIFI_STATE",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_LOCATION"
       ]
     },
     "web": {
@@ -81,8 +86,9 @@
     "scheme": "commutetimely",
     "extra": {
       "eas": {
-        "projectId": "commutetimely-project"
+        "projectId": "f7aaa346-0231-4372-be6e-846dc01ca2b3"
       }
-    }
+    },
+    "owner": "umerp"
   }
 }
