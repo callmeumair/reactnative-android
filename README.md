@@ -1,4 +1,4 @@
-# Commute Reminder App (Android Only)
+# CommuteTimely App (Android Only)
 
 A React Native app optimized for Android that helps users never be late by sending timely notifications about when to leave home to reach their destination on time.
 
