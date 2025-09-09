@@ -1,137 +1,79 @@
-# Commute Reminder App (Android Only)
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-A React Native app optimized for Android that helps users never be late by sending timely notifications about when to leave home to reach their destination on time.
+# Getting Started
 
-## Features
+>**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-- Add multiple destinations (office, school, college, etc.)
-- Set arrival times and travel duration
-- Configure notification timing
-- Daily recurring notifications
-- Beautiful, intuitive UI optimized for Android
-- Persistent storage of destinations
-- Toggle notifications on/off for each destination
-- Android-specific optimizations and configurations
+## Step 1: Start the Metro Server
 
-## Prerequisites
+First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-- Node.js (v16 or higher)
-- Java Development Kit (JDK) 11 or 17
-- Android Studio with Android SDK
-- Android Emulator or physical device
+To start Metro, run the following command from the _root_ of your React Native project:
 
-## Installation
-
-1. Install dependencies:
 ```bash
-npm install
-```
-
-2. For Android development, make sure you have:
-   - Android Studio installed
-   - Android SDK (API level 21 or higher)
-   - Android Emulator running or physical device connected
-
-## Running the App
-
-### Start Metro Bundler
-```bash
+# using npm
 npm start
+
+# OR using Yarn
+yarn start
 ```
 
-### Run on Android
+## Step 2: Start your Application
+
+Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+
+### For Android
+
 ```bash
+# using npm
 npm run android
+
+# OR using Yarn
+yarn android
 ```
 
-This will:
-1. Build the Android app
-2. Install it on the emulator/device
-3. Start the Metro bundler
-4. Launch the app
-
-## Android-Specific Commands
+### For iOS
 
 ```bash
-# Build debug APK
-npm run build:debug
+# using npm
+npm run ios
 
-# Build release APK
-npm run build:android
-
-# Clean Android build
-npm run clean:android
-
-# Install debug APK on device
-npm run install:android
-
-# Bundle JavaScript for production
-npm run bundle:android
+# OR using Yarn
+yarn ios
 ```
 
-## Project Structure
+If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-```
-src/
-├── context/
-│   └── NotificationContext.tsx    # Notification management (Android optimized)
-├── screens/
-│   ├── HomeScreen.tsx             # Main screen with destinations
-│   ├── AddDestinationScreen.tsx   # Add/edit destinations
-│   └── SettingsScreen.tsx         # App settings
-App.tsx                            # Main app component
-android/                           # Android-specific configurations
-```
+This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Android Configuration
+## Step 3: Modifying your App
 
-The project is optimized for Android with:
-- Metro bundler configured for Android-only builds
-- Android-specific build scripts
-- Optimized notification handling for Android
-- Proper Android permissions and manifest configuration
+Now that you have successfully run the app, let's modify it.
 
-## How It Works
+1. Open `App.tsx` in your text editor of choice and edit some lines.
+2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
-1. **Add Destinations**: Users can add destinations with names, addresses, arrival times, and travel duration
-2. **Calculate Departure Time**: The app automatically calculates when to leave based on arrival time and travel duration
-3. **Schedule Notifications**: Notifications are scheduled to remind users when to leave
-4. **Daily Recurring**: Notifications repeat daily at the same time
-5. **Persistent Storage**: All destinations are saved locally and persist between app launches
+   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
-## Permissions
+## Congratulations! :tada:
 
-The app requires the following Android permissions:
-- `VIBRATE` - For notification vibrations
-- `WAKE_LOCK` - To ensure notifications are delivered
-- `RECEIVE_BOOT_COMPLETED` - To reschedule notifications after device restart
-- `ACCESS_FINE_LOCATION` - For future location-based features
-- `ACCESS_COARSE_LOCATION` - For future location-based features
+You've successfully run and modified your React Native App. :partying_face:
 
-## Troubleshooting
+### Now what?
 
-### Common Issues
+- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
+- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
 
-1. **Build fails**: Make sure you have the correct JDK version installed
-2. **Emulator not found**: Start an Android emulator before running the app
-3. **Metro bundler issues**: Try clearing the cache with `npm start -- --reset-cache`
+# Troubleshooting
 
-### Clean Build
-If you encounter build issues, try:
-```bash
-npm run clean:android
-npm run android
-```
+If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
-## Future Enhancements
+# Learn More
 
-- Location-based travel time estimation
-- Traffic-aware departure time calculation
-- Multiple notification sounds
-- Widget support
-- Wear OS companion app
-- Cloud sync across devices
+To learn more about React Native, take a look at the following resources:
 
-## License
-
-This project is for educational purposes.
+- [React Native Website](https://reactnative.dev) - learn more about React Native.
+- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
+- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
+- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.

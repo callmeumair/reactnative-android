@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1013982656069",
+    "project_id": "commutetimely-da50c",
+    "storage_bucket": "commutetimely-da50c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013982656069:android:57c1cd21ee768edda3d52c",
+        "android_client_info": {
+          "package_name": "com.commutetimely"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_zHRHGEGpyoDuVEiZjen_p6qesbZF24A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

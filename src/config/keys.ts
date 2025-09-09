@@ -1,0 +1,7 @@
+export const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiY29tbXV0ZXRpbWVseSIsImEiOiJjbWUzMzUydmcwMmN1MmtzZnoycGs1ZDhhIn0.438vHnYipmUNS7JoCglyMg';
+export const WEATHERBIT_API_KEY = '836afe5ccf9c46e1bc2fa3a894f676b3';
+
+// Supabase configuration
+export const SUPABASE_URL = 'https://jxthopzqahfhkttdynil.supabase.co';
+export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp4dGhvcHpxYWhmaGt0dGR5bmlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTcwMDA3MjksImV4cCI6MjA3MjU3NjcyOX0.1GUs2VbEKFgwi58mosAAwQ_IBOAUjrS-iUCAXhfA8yY';
+
