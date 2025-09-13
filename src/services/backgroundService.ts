@@ -191,9 +191,4 @@ export class BackgroundCommuteService {
 
 export const backgroundCommuteService = new BackgroundCommuteService();
 
-// Initialize the service when the module is imported
-if (Platform.OS === 'android') {
-  backgroundCommuteService.initialize().catch(error => {
-    console.error('Failed to initialize background service:', error);
-  });
-}
+// Note: Service initialization is now handled in App.tsx to avoid early initialization issues

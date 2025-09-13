@@ -10,7 +10,7 @@ import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
-import {StatusBar, Platform} from 'react-native';
+import {StatusBar, Platform, View, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {ThemeProvider, useTheme} from './src/context/ThemeContext';
@@ -52,8 +52,8 @@ function TabNavigator() {
           backgroundColor: theme.surface,
           borderTopColor: theme.outline,
           borderTopWidth: 0.5,
-          paddingBottom: Platform.OS === 'ios' ? 20 : 10,
-          height: Platform.OS === 'ios' ? 90 : 70,
+          paddingBottom: 10,
+          height: 70,
         },
         tabBarLabelStyle: {
           fontSize: 12,
@@ -105,11 +105,18 @@ function AppNavigator() {
 
   const initializeApp = async () => {
     try {
+      // Initialize notifications first
       initNotifications();
       ensureDefaultChannel();
       
-      // Initialize background service for daily calculations
-      await backgroundCommuteService.initialize();
+      // Initialize background service for daily calculations with delay
+      setTimeout(async () => {
+        try {
+          await backgroundCommuteService.initialize();
+        } catch (error) {
+          console.warn('Failed to initialize background service:', error);
+        }
+      }, 5000); // Increased delay to ensure app is fully loaded
     } catch (error) {
       console.warn('Failed to initialize app:', error);
     }

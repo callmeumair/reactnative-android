@@ -2,8 +2,10 @@ import SQLite from 'react-native-sqlite-storage';
 import uuid from 'react-native-uuid';
 import {supabaseService} from './supabase';
 
-// Enable debugging
-SQLite.DEBUG(true);
+// Enable debugging only in development
+if (__DEV__) {
+  SQLite.DEBUG(true);
+}
 SQLite.enablePromise(true);
 
 export interface Destination {
